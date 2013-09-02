@@ -1,0 +1,312 @@
+/*
+------------------------------------------------
+Park Cities Presbyterian Church
+Project: PCPC Arts Festival
+Created on: 09/24/2006
+by: Brian Zerangue, webmaster@pcpc.org
+Revised on: 10/03/2006
+------------------------------------------------
+*/
+/*
+===========
+NOTE: 
+===========
+
+Used Clagnut.com's solution on text using em's... 
+http://www.clagnut.com/blog/348/
+
+Used Positioniseverything.com's solutions on "One True Layout"... 
+http://positioniseverything.net/articles/onetruelayout/ 
+
+============
+*/
+/* Normalizes margin and padding */
+body, div dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td {
+  margin: 0;
+  padding: 0; }
+
+/* Removes list-style from all lists */
+ol, ul {
+  list-style: none; }
+
+body {
+  background-color: #FFF;
+  background-image: url(../images/8.jpg);
+  background-repeat: repeat-x;
+  color: #333;
+  font-size: 62.5%;
+  /* This sets up the text to be roughly 10px */
+  text-align: left; }
+
+#wrap {
+  width: 78em;
+  margin: 2em auto;
+  background: #fff; }
+
+.wrapper {
+  float: left; }
+
+/*  Masthead and Navigation
+----------------------------------------------*/
+div#nav-main {
+  width: 100%; }
+  div#nav-main h3 a span {
+    display: block; }
+  div#nav-main ul {
+    margin: 0; }
+  div#nav-main li {
+    margin: 0;
+    width: 16.67%;
+    display: inline;
+    float: left; }
+    div#nav-main li a {
+      padding: 0.8em 0.8em;
+      height: 5em;
+      display: block; }
+    div#nav-main li h3 {
+      font-size: 1.4em;
+      font-weight: normal; }
+    div#nav-main li span {
+      font-size: 0.8em;
+      color: #777; }
+    div#nav-main li a {
+      border: 1px solid #fff;
+      color: #65AEB0;
+      text-decoration: none; }
+      div#nav-main li a:hover {
+        background-color: #CAE3E4;
+        border: 1px solid #A8D2D3; }
+
+#contentwrap h4.button {
+  width: 55%;
+  margin: 0 auto; }
+  #contentwrap h4.button a {
+    font-size: 1.4em;
+    padding: 0.8em 0.8em;
+    display: block;
+    border: 1px solid #fff;
+    color: #65AEB0;
+    text-decoration: none;
+    text-align: center; }
+    #contentwrap h4.button a:hover {
+      background-color: #CAE3E4;
+      border: 1px solid #A8D2D3; }
+
+.mastheadwrapper h1 {
+  text-indent: -9999em;
+  background: url(../images/10.gif) no-repeat;
+  width: 510px;
+  height: 160px;
+  margin: 0 auto;
+  padding: 0; }
+
+#contentwrap {
+  padding: 2em 4em 6em 4em;
+  font-family: 'Baskerville', 'Baskerville Old Face', 'Times New Roman', serif; }
+  #contentwrap h2 {
+    font-size: 2.8em;
+    font-family: 'Baskerville', 'Baskerville Old Face', 'Times New Roman', serif;
+    font-weight: normal;
+    color: #777;
+    padding: 0.5em 0;
+    clear: left; }
+    #contentwrap h2 .extraspacetop {
+      padding-top: 2em; }
+  #contentwrap h3 {
+    margin: 0;
+    padding: 0.5em 0;
+    font-size: 2em;
+    font-family: 'Baskerville', 'Baskerville Old Face', 'Times New Roman', serif;
+    font-weight: normal;
+    color: #83B57B; }
+  #contentwrap h4 {
+    margin: 0;
+    padding: 0.5em 0;
+    font-size: 1.7em;
+    font-family: 'Baskerville', 'Baskerville Old Face', 'Times New Roman', serif;
+    font-weight: normal;
+    color: #7579A8; }
+  #contentwrap p {
+    font-size: 1.4em;
+    line-height: 170%;
+    padding: 0 0 1.2em 0; }
+  #contentwrap a {
+    color: #003399; }
+
+#footer a {
+  color: #003399; }
+
+/* #contentwrap a:hover, #footer a:hover {
+text-decoration: none;
+background-color: #7579A8;
+color: #CBCDE4;
+} */
+div#contentsection {
+  padding: 2em 0; }
+  div#contentsection ul li {
+    font-size: 1.3em;
+    line-height: 210%; }
+div.scheduleitems {
+  padding: 0 0 1.5em 0; }
+
+.announcelisting {
+  padding: 0;
+  margin: 0 0 2em 0; }
+  .announcelisting h3 {
+    padding: 0 0 0.2em 0;
+    margin: 0; }
+  .announcelisting p {
+    margin: 0;
+    padding: 0.3em 0; }
+
+.calcontainer {
+  text-align: center; }
+
+#footer {
+  position: relative;
+  border-top: 1px solid #eee;
+  padding: 1em 4em; }
+  #footer p {
+    margin: 0;
+    font-size: 1.1em;
+    font-family: 'Baskerville', 'Baskerville Old Face', 'Times New Roman', serif;
+    color: #888; }
+
+/*
+--------------------------------------------------
+Video Styling
+--------------------------------------------------
+*/
+#videofront {
+  position: relative;
+  padding: 1.4em 0;
+  height: 200px; }
+
+dl.artdemo, dl.artdigital {
+  width: 212px; }
+dl.artdemo {
+  position: absolute;
+  top: 0;
+  left: 0; }
+dl.artdigital {
+  position: absolute;
+  top: 0;
+  right: 0; }
+dl.artdemo a, dl.artdigital a {
+  display: block;
+  height: 143px;
+  width: 212px; }
+dl.artdemo dd, dl.artdigital dd {
+  height: 143px;
+  width: 212px;
+  text-indent: -9999px; }
+dl.artdemo dd {
+  background: url(../images/digitalday_1a.jpg) no-repeat; }
+dl.artdemo a:hover {
+  height: 143px;
+  width: 212px;
+  background: url(../images/digitalday_1b.jpg) no-repeat; }
+dl.artdigital dd {
+  background: url(../images/digitalday_2a.jpg) no-repeat; }
+dl.artdigital a:hover {
+  height: 143px;
+  width: 212px;
+  background: url(../images/digitalday_2b.jpg) no-repeat; }
+
+/*
+--------------------------------------------------
+Picture Styling
+--------------------------------------------------
+*/
+img.imgright {
+  float: right;
+  margin: 0.5em 0 0.5em 1.0em;
+  padding: 0.4em;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #CCC;
+  border-right: 1px solid #CCC;
+  border-left: 1px solid #999;
+  background-color: #eee; }
+img.imgleft {
+  float: left;
+  margin: 0.5em 1.0em 0.5em 0;
+  padding: 0.4em;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #CCC;
+  border-right: 1px solid #CCC;
+  border-left: 1px solid #999;
+  background-color: #eee; }
+
+/*
+--------------------------------------------------
+Theme Verse Display
+--------------------------------------------------
+*/
+.theme {
+  margin: 0 1em;
+  width: 30.5em;
+  float: left;
+  display: inline; }
+  .theme blockquote {
+    font-style: italic;
+    margin-left: 1em; }
+
+.clearleft {
+  clear: left; }
+
+/*
+--------------------------------------------------
+Contact Form Styling
+--------------------------------------------------
+*/
+fieldset {
+  border: 0; }
+  fieldset legend {
+    color: #fff;
+    margin: 0;
+    padding: 0; }
+
+/*
+--------------------------------------------------
+awardWinners on Home Page
+--------------------------------------------------
+*/
+div#awardWinners p {
+  font-size: 85%; }
+div#topTen li {
+  display: inline;
+  margin: 0 10px 0 0; }
+
+/*
+--------------------------------------------------
+Slimbox - Photo Display Styling
+--------------------------------------------------
+*/
+.smd_slimbox {
+  width: 700px;
+  display: block;
+  overflow: hidden; }
+
+div#peoples_choice {
+  height: 250px;
+  overflow: hidden; }
+
+.smd_slimbox li {
+  float: left;
+  display: inline;
+  margin: 0.5em;
+  height: 360px;
+  width: 150px;
+  overflow: hidden; }
+  .smd_slimbox li a {
+    border: 0;
+    outline: 0;
+    text-direction: none; }
+    .smd_slimbox li a img {
+      border: 0;
+      outline: 0; }
+  .smd_slimbox li.cell span {
+    display: block;
+    line-height: 100%; }
+
+/* Localized */
